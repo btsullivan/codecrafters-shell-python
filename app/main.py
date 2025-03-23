@@ -11,7 +11,11 @@ def main():
         command = input()
         if command == "exit 0":
             x = False
-        elif command != "exit 0":
+
+        elif "echo" in command:
+            command = command.replace("echo","")
+            print(f"{command}")
+        else:
             print(f"{command}: command not found")
 
 
