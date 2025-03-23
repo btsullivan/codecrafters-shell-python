@@ -13,7 +13,7 @@ def main():
             x = False
 
         elif "echo" in command:
-            command = command.replace("echo","")
+            command = command.replace("echo","").strip()
             print(f"{command}")
         else:
             print(f"{command}: command not found")
